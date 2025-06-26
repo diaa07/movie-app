@@ -1,0 +1,75 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(12, 12, 12, 0.8);
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  user-select: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.logo .name {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.pages-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 30px;
+}
+
+.pages-links .btn {
+  text-decoration: none;
+  color: aliceblue;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.pages-links .btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+body.dark nav {
+  background-color: rgba(12, 12, 12, 0.8);
+  color: aliceblue;
+}
+
+body.dark .pages-links .btn {
+  color: aliceblue;
+}
+
+body.light nav {
+  background-color: #eaeaea !important;
+  color: #222;
+}
+
+body.light .logo .name {
+  color: #222;
+}
+
+body.light .pages-links .btn {
+  color: #333;
+}
+
+body.light .pages-links .btn:hover {
+  background-color: #ccc;
+  color: #111;
+}
